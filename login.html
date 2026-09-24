@@ -1,0 +1,63 @@
+<html>
+<head>
+
+<title>Online Tuition & Tutor Booking</title>
+<link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+<div class="container">
+<div class="left">
+<h1>Online Tuition</h1>
+<h2>& Tutor Booking System</h2>
+<p>
+Learn Smarter.
+Find the Best Tutor.
+Book Classes Anytime.
+</p>
+</div>
+<div class="right">
+<div class="login-box">
+<h2>Login</h2>
+
+<form id="loginForm">
+    <input type="text" id="username" placeholder="Enter Username" required>
+    <input type="password" id="password" placeholder="Enter Password" required>
+    <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="student">Student</option>
+        <option value="tutor">Tutor</option>
+        <option value="admin">Admin</option>
+    </select>
+    <button type="submit">Login</button>
+    <a href="#">Forgot Password?</a>
+</form>
+
+</div>
+</div>
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    let role = document.getElementById("role").value;
+    if(username === "" || password === "" || role === ""){
+        alert("Please enter username, password and select role!");
+    }
+    else if(role === "student"){
+        window.location.href = "std.html";
+    }
+    else if(role === "tutor"){
+        window.location.href = "tutor.html";
+    }
+    else if(role === "admin"){
+        window.location.href = "admin.html";
+    }
+});
+</script>
+
+</body>
+</html>

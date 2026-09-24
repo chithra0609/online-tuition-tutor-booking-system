@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fees - EduSpark</title>
+
+    <link rel="stylesheet" href="t-fees.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <h2>EduSpark</h2>
+    <ul>
+        <!-- Dashboard -->
+        <li>
+            <a href="tutor.html">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <!-- Profile -->
+        <li>
+            <a href="t-profile.html">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+        <!-- Subjects -->
+        <li>
+            <a href="t-sub.html">
+                <i class="fas fa-book"></i>
+                <span>Subjects</span>
+            </a>
+        </li>
+        <!-- Fees -->
+        <li class="active">
+            <a href="t-fees.html">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>Fees</span>
+            </a>
+        </li>
+        <!-- Availability -->
+        <li>
+            <a href="t-availability.html">
+                <i class="fas fa-calendar-check"></i>
+                <span>Availability</span>
+            </a>
+        </li>
+        <!-- Homework -->
+        <li>
+            <a href="t-hw.html">
+                <i class="fas fa-book-open"></i>
+                <span>Homework</span>
+            </a>
+        </li>
+        <!-- Assignment -->
+        <li>
+            <a href="t-assignment.html">
+                <i class="fas fa-file-alt"></i>
+                <span>Assignment</span>
+            </a>
+        </li>
+        <!-- Marks -->
+        <li>
+            <a href="t-mark.html">
+                <i class="fas fa-chart-line"></i>
+                <span>Marks</span>
+            </a>
+        </li>
+        <!-- Settings -->
+        <li>
+            <a href="t-setting.html">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <!-- Logout -->
+        <li>
+            <a href="signout.html">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+    <!-- MAIN -->
+
+    <div class="main">
+
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <div>
+
+                <h1>Fees & Pricing</h1>
+
+                <p>Set your tutoring fees and payment preferences.</p>
+
+            </div>
+
+            <div class="notification">
+
+                <i class="fas fa-bell"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SUMMARY CARDS -->
+
+        <div class="summary">
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon blue">
+
+                    <i class="fas fa-rupee-sign"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Average Fee</span>
+
+                    <h2>₹500</h2>
+
+                    <small>Per Hour</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon green">
+
+                    <i class="fas fa-users"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Active Students</span>
+
+                    <h2>28</h2>
+
+                    <small>Currently Learning</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon orange">
+
+                    <i class="fas fa-chart-line"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Estimated Earnings</span>
+
+                    <h2>₹56,000</h2>
+
+                    <small>Per Month</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRICING CARD -->
+
+        <div class="pricing-card">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>My Pricing</h2>
+
+                    <p>Set your standard tutoring charges.</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="pricing-grid">
+
+
+                <!-- Individual -->
+
+                <div class="price-box">
+
+                    <div class="price-icon blue">
+
+                        <i class="fas fa-user"></i>
+
+                    </div>
+
+                    <h3>Individual Class</h3>
+
+                    <p>One-to-one personalized tutoring.</p>
+
+                    <div class="input-group">
+
+                        <span>₹</span>
+
+                        <input
+                            type="number"
+                            id="individualFee"
+                            value="500"
+                            min="0">
+
+                        <small>/ hour</small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Group -->
+
+                <div class="price-box">
+
+                    <div class="price-icon purple">
+
+                        <i class="fas fa-user-friends"></i>
+
+                    </div>
+
+                    <h3>Group Class</h3>
+
+                    <p>Teaching multiple students together.</p>
+
+                    <div class="input-group">
+
+                        <span>₹</span>
+
+                        <input
+                            type="number"
+                            id="groupFee"
+                            value="300"
+                            min="0">
+
+                        <small>/ hour</small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Trial -->
+
+                <div class="price-box">
+
+                    <div class="price-icon orange">
+
+                        <i class="fas fa-gift"></i>
+
+                    </div>
+
+                    <h3>Trial Class</h3>
+
+                    <p>Introductory session for new students.</p>
+
+                    <div class="input-group">
+
+                        <span>₹</span>
+
+                        <input
+                            type="number"
+                            id="trialFee"
+                            value="200"
+                            min="0">
+
+                        <small>/ session</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SUBJECT WISE FEES -->
+
+        <div class="subject-fee-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Subject-wise Pricing</h2>
+
+                    <p>Set different fees for individual subjects.</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="fee-table">
+
+                <div class="table-header">
+
+                    <span>Subject</span>
+
+                    <span>Students</span>
+
+                    <span>Fee / Hour</span>
+
+                    <span>Status</span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <div class="subject-name">
+
+                        <div class="subject-icon java">
+                            <i class="fab fa-java"></i>
+                        </div>
+
+                        <strong>Java Programming</strong>
+
+                    </div>
+
+                    <span>10 Students</span>
+
+                    <div class="fee-input">
+
+                        <span>₹</span>
+
+                        <input type="number" value="600">
+
+                    </div>
+
+                    <span class="active-status">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <div class="subject-name">
+
+                        <div class="subject-icon python">
+                            <i class="fab fa-python"></i>
+                        </div>
+
+                        <strong>Python Programming</strong>
+
+                    </div>
+
+                    <span>8 Students</span>
+
+                    <div class="fee-input">
+
+                        <span>₹</span>
+
+                        <input type="number" value="500">
+
+                    </div>
+
+                    <span class="active-status">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <div class="subject-name">
+
+                        <div class="subject-icon web">
+                            <i class="fas fa-code"></i>
+                        </div>
+
+                        <strong>Web Development</strong>
+
+                    </div>
+
+                    <span>6 Students</span>
+
+                    <div class="fee-input">
+
+                        <span>₹</span>
+
+                        <input type="number" value="550">
+
+                    </div>
+
+                    <span class="active-status">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <div class="subject-name">
+
+                        <div class="subject-icon database">
+                            <i class="fas fa-database"></i>
+                        </div>
+
+                        <strong>MySQL Database</strong>
+
+                    </div>
+
+                    <span>4 Students</span>
+
+                    <div class="fee-input">
+
+                        <span>₹</span>
+
+                        <input type="number" value="450">
+
+                    </div>
+
+                    <span class="active-status">
+                        Active
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PAYMENT PREFERENCE -->
+
+        <div class="payment-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Payment Preference</h2>
+
+                    <p>Select your preferred payment method.</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="payment-options">
+
+
+                <label class="payment-option">
+
+                    <input type="radio" name="payment" checked>
+
+                    <div>
+
+                        <i class="fas fa-university"></i>
+
+                        <strong>Bank Transfer</strong>
+
+                        <p>Receive payments directly to your bank account.</p>
+
+                    </div>
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input type="radio" name="payment">
+
+                    <div>
+
+                        <i class="fas fa-mobile-alt"></i>
+
+                        <strong>UPI</strong>
+
+                        <p>Accept payments through UPI.</p>
+
+                    </div>
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input type="radio" name="payment">
+
+                    <div>
+
+                        <i class="fas fa-wallet"></i>
+
+                        <strong>Digital Wallet</strong>
+
+                        <p>Use a supported digital wallet.</p>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SAVE -->
+
+        <div class="save-section">
+
+            <button class="cancel-btn">
+                Cancel
+            </button>
+
+            <button class="save-btn" onclick="saveFees()">
+
+                <i class="fas fa-save"></i>
+
+                Save Changes
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+
+        function saveFees() {
+
+            alert("Fee details saved successfully!");
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

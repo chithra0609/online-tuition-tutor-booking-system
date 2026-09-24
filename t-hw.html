@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutor Homework - EduSpark</title>
+
+    <link rel="stylesheet" href="t-hw.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <h2>EduSpark</h2>
+    <ul>
+        <!-- Dashboard -->
+        <li>
+            <a href="tutor.html">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <!-- Profile -->
+        <li>
+            <a href="t-profile.html">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+        <!-- Subjects -->
+        <li>
+            <a href="t-sub.html">
+                <i class="fas fa-book"></i>
+                <span>Subjects</span>
+            </a>
+        </li>
+        <!-- Fees -->
+        <li>
+            <a href="t-fees.html">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>Fees</span>
+            </a>
+        </li>
+        <!-- Availability -->
+        <li>
+            <a href="t-availability.html">
+                <i class="fas fa-calendar-check"></i>
+                <span>Availability</span>
+            </a>
+        </li>
+        <!-- Homework -->
+        <li class="active">
+            <a href="t-hw.html">
+                <i class="fas fa-book-open"></i>
+                <span>Homework</span>
+            </a>
+        </li>
+        <!-- Assignment -->
+        <li>
+            <a href="t-assignment.html">
+                <i class="fas fa-file-alt"></i>
+                <span>Assignment</span>
+            </a>
+        </li>
+        <!-- Marks -->
+        <li>
+            <a href="t-mark.html">
+                <i class="fas fa-chart-line"></i>
+                <span>Marks</span>
+            </a>
+        </li>
+        <!-- Settings -->
+        <li>
+            <a href="t-setting.html">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <!-- Logout -->
+        <li>
+            <a href="signout.html">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <div>
+                <h1>Homework</h1>
+
+                <p>
+                    Create and manage homework for your students.
+                </p>
+            </div>
+
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+
+        </div>
+
+
+        <!-- TOP CARDS -->
+
+        <div class="summary">
+
+            <div class="summary-card">
+
+                <div class="icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+
+                <div>
+                    <p>Total Homework</p>
+                    <h2>12</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+
+                <div>
+                    <p>Active Homework</p>
+                    <h2>8</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+
+                <div>
+                    <p>Completed</p>
+                    <h2>4</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ADD HOMEWORK -->
+
+        <div class="homework-form">
+
+            <div class="form-title">
+
+                <h2>
+                    <i class="fas fa-plus-circle"></i>
+                    Add New Homework
+                </h2>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>Subject</label>
+
+                    <select id="subject">
+
+                        <option value="">Select Subject</option>
+
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>HTML & CSS</option>
+                        <option>JavaScript</option>
+                        <option>React.js</option>
+                        <option>MySQL</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Student / Class</label>
+
+                    <select id="student">
+
+                        <option value="">Select Student</option>
+
+                        <option>All Students</option>
+                        <option>Sathya</option>
+                        <option>Dharshana</option>
+                        <option>Uma</option>
+                        <option>Ganesh</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label>Homework Title</label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Enter homework title">
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label>Description</label>
+
+                    <textarea
+                        id="description"
+                        rows="5"
+                        placeholder="Enter homework instructions..."></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Assigned Date</label>
+
+                    <input
+                        type="date"
+                        id="assignedDate">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Due Date</label>
+
+                    <input
+                        type="date"
+                        id="dueDate">
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label>Attach File</label>
+
+                    <input
+                        type="file"
+                        id="homeworkFile">
+
+                    <small>
+                        PDF, DOC, PPT or image files
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-buttons">
+
+                <button
+                    class="clear-btn"
+                    onclick="clearForm()">
+
+                    Clear
+
+                </button>
+
+
+                <button
+                    class="publish-btn"
+                    onclick="publishHomework()">
+
+                    <i class="fas fa-paper-plane"></i>
+                    Publish Homework
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- EXISTING HOMEWORK -->
+
+        <div class="homework-list">
+
+            <div class="list-header">
+
+                <h2>My Homework</h2>
+
+                <select id="filter">
+
+                    <option>All Homework</option>
+                    <option>Active</option>
+                    <option>Completed</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Subject</th>
+
+                            <th>Homework</th>
+
+                            <th>Student</th>
+
+                            <th>Due Date</th>
+
+                            <th>Status</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="homeworkTable">
+
+                        <tr>
+
+                            <td>Java</td>
+
+                            <td>OOP Concepts</td>
+
+                            <td>All Students</td>
+
+                            <td>20 Aug 2026</td>
+
+                            <td>
+                                <span class="status active-status">
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="view-btn"
+                                    onclick="viewHomework('Java - OOP Concepts')">
+
+                                    <i class="fas fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="delete-btn"
+                                    onclick="deleteHomework(this)">
+
+                                    <i class="fas fa-trash"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Python</td>
+
+                            <td>Loops & Functions</td>
+
+                            <td>Sathya</td>
+
+                            <td>22 Aug 2026</td>
+
+                            <td>
+                                <span class="status active-status">
+                                    Active
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="view-btn"
+                                    onclick="viewHomework('Python - Loops & Functions')">
+
+                                    <i class="fas fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="delete-btn"
+                                    onclick="deleteHomework(this)">
+
+                                    <i class="fas fa-trash"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>HTML & CSS</td>
+
+                            <td>Responsive Web Page</td>
+
+                            <td>Uma</td>
+
+                            <td>25 Aug 2026</td>
+
+                            <td>
+                                <span class="status pending-status">
+                                    Pending
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="view-btn"
+                                    onclick="viewHomework('HTML & CSS - Responsive Web Page')">
+
+                                    <i class="fas fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="delete-btn"
+                                    onclick="deleteHomework(this)">
+
+                                    <i class="fas fa-trash"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function publishHomework() {
+
+            let subject =
+                document.getElementById("subject").value;
+
+            let student =
+                document.getElementById("student").value;
+
+            let title =
+                document.getElementById("title").value;
+
+            let description =
+                document.getElementById("description").value;
+
+            let dueDate =
+                document.getElementById("dueDate").value;
+
+
+            if (
+                subject === "" ||
+                student === "" ||
+                title === "" ||
+                description === "" ||
+                dueDate === ""
+            ) {
+
+                alert("Please fill all required fields.");
+
+                return;
+
+            }
+
+
+            alert(
+                "Homework published successfully!"
+            );
+
+
+            clearForm();
+
+        }
+
+
+        function clearForm() {
+
+            document.getElementById("subject").value = "";
+
+            document.getElementById("student").value = "";
+
+            document.getElementById("title").value = "";
+
+            document.getElementById("description").value = "";
+
+            document.getElementById("assignedDate").value = "";
+
+            document.getElementById("dueDate").value = "";
+
+            document.getElementById("homeworkFile").value = "";
+
+        }
+
+
+        function viewHomework(name) {
+
+            alert(
+                "Homework: " + name
+            );
+
+        }
+
+
+        function deleteHomework(button) {
+
+            let confirmDelete =
+                confirm(
+                    "Are you sure you want to delete this homework?"
+                );
+
+
+            if (confirmDelete) {
+
+                button
+                    .closest("tr")
+                    .remove();
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

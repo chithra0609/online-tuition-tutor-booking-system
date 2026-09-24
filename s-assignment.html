@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments - EduSpark</title>
+    <link rel="stylesheet" href="s-assignment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>EduSpark</h2>
+        <ul>
+            <li>
+                <a href="std.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="s-findtutor.html">
+                    <i class="fas fa-search"></i>
+                    Find Tutor
+                </a>
+            </li>
+            <li>
+                <a href="s-hw.html">
+                    <i class="fas fa-book"></i>
+                    Homework
+                </a>
+            </li>
+            <li class="active">
+                <a href="s-assignment.html">
+                    <i class="fas fa-file-alt"></i>
+                    Assignments
+                </a>
+            </li>
+            <li>
+                <a href="s-mark.html">
+                    <i class="fas fa-chart-line"></i>
+                    Marks
+                </a>
+            </li>
+            <li>
+                <a href="s-profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+            <li>
+                <a href="s-setting.html">
+                    <i class="fas fa-cog"></i>
+                    Settings
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="signout.html" >
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>Assignments</h1>
+                <p>
+                    Manage your assignments and submission status.
+                </p>
+            </div>
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+        </div>
+        <!-- Summary Cards -->
+        <div class="summary">
+            <div class="summary-card">
+                <div class="icon blue">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div>
+                    <p>Total Assignments</p>
+                    <h2>10</h2>
+                </div>
+            </div>
+            <div class="summary-card">
+                <div class="icon orange">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                    <p>Pending</p>
+                    <h2>4</h2>
+                </div>
+            </div>
+            <div class="summary-card">
+                <div class="icon green">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div>
+                    <p>Submitted</p>
+                    <h2>6</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Assignment Table -->
+        <div class="assignment-box">
+            <div class="title">
+                <div>
+                    <h2>My Assignments</h2>
+                    <p>Check your assignments and submit them before the due date.</p>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Assignment</th>
+                            <th>Tutor</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="subject java">
+                                    Java
+                                </span>
+                            </td>
+                            <td>
+                                OOP Concepts
+                            </td>
+                            <td>
+                                Mr. Arun
+                            </td>
+                            <td>
+                                28 Jul 2026
+                            </td>
+                            <td>
+                                <span class="pending">
+                                    Pending
+                                </span>
+                            </td>
+                            <td>
+                                <button class="submit-btn">
+                                    Submit
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <span class="subject python">
+                                    Python
+                                </span>
+                            </td>
+
+                            <td>
+                                Python Functions
+                            </td>
+
+                            <td>
+                                Mrs. Kavya
+                            </td>
+
+                            <td>
+                                29 Jul 2026
+                            </td>
+
+                            <td>
+                                <span class="progress">
+                                    In Progress
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="submit-btn">
+                                    Submit
+                                </button>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <span class="subject react">
+                                    React
+                                </span>
+                            </td>
+
+                            <td>
+                                React Components
+                            </td>
+
+                            <td>
+                                Mr. Rahul
+                            </td>
+
+                            <td>
+                                30 Jul 2026
+                            </td>
+
+                            <td>
+                                <span class="submitted">
+                                    Submitted
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="view-btn">
+                                    View
+                                </button>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <span class="subject html">
+                                    HTML
+                                </span>
+                            </td>
+
+                            <td>
+                                Registration Form
+                            </td>
+
+                            <td>
+                                Mrs. Sandhiya
+                            </td>
+
+                            <td>
+                                31 Jul 2026
+                            </td>
+
+                            <td>
+                                <span class="pending">
+                                    Pending
+                                </span>
+                            </td>
+
+                            <td>
+                                <button class="submit-btn">
+                                    Submit
+                                </button>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

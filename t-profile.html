@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutor Profile - EduSpark</title>
+
+    <link rel="stylesheet" href="t-profile.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <h2>EduSpark</h2>
+    <ul>
+        <!-- Dashboard -->
+        <li>
+            <a href="tutor.html">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <!-- Profile -->
+        <li class="active">
+            <a href="t-profile.html">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+        <!-- Subjects -->
+        <li>
+            <a href="t-sub.html">
+                <i class="fas fa-book"></i>
+                <span>Subjects</span>
+            </a>
+        </li>
+        <!-- Fees -->
+        <li>
+            <a href="t-fees.html">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>Fees</span>
+            </a>
+        </li>
+        <!-- Availability -->
+        <li>
+            <a href="t-availability.html">
+                <i class="fas fa-calendar-check"></i>
+                <span>Availability</span>
+            </a>
+        </li>
+        <!-- Homework -->
+        <li>
+            <a href="t-hw.html">
+                <i class="fas fa-book-open"></i>
+                <span>Homework</span>
+            </a>
+        </li>
+        <!-- Assignment -->
+        <li>
+            <a href="t-assignment.html">
+                <i class="fas fa-file-alt"></i>
+                <span>Assignment</span>
+            </a>
+        </li>
+        <!-- Marks -->
+        <li>
+            <a href="t-mark.html">
+                <i class="fas fa-chart-line"></i>
+                <span>Marks</span>
+            </a>
+        </li>
+        <!-- Settings -->
+        <li>
+            <a href="t-setting.html">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <!-- Logout -->
+        <li>
+            <a href="signout.html">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+    <!-- MAIN -->
+
+    <div class="main">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <div>
+                <h1>My Profile</h1>
+                <p>Manage your personal and professional information.</p>
+            </div>
+
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+
+        </div>
+
+
+        <!-- PROFILE CARD -->
+
+        <div class="profile-card">
+
+            <!-- TOP PROFILE -->
+
+            <div class="profile-top">
+
+                <div class="profile-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300"
+                        alt="Tutor Profile">
+
+                </div>
+
+                <div class="profile-info">
+
+                    <h2>Priya Sharma</h2>
+
+                    <p>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        Full Stack Development Tutor
+                    </p>
+
+                    <div class="rating">
+
+                        <span>★★★★★</span>
+
+                        <small>4.8 Rating</small>
+
+                    </div>
+
+                </div>
+
+                <button class="edit-btn" onclick="editProfile()">
+
+                    <i class="fas fa-edit"></i>
+                    Edit Profile
+
+                </button>
+
+            </div>
+
+
+            <!-- PERSONAL INFORMATION -->
+
+            <div class="section">
+
+                <h2>Personal Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            value="Priya Sharma">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Email Address</label>
+
+                        <input
+                            type="email"
+                            value="priya@example.com">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Phone Number</label>
+
+                        <input
+                            type="tel"
+                            value="+91 98765 43210">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Location</label>
+
+                        <input
+                            type="text"
+                            value="Coimbatore, Tamil Nadu">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFESSIONAL INFORMATION -->
+
+            <div class="section">
+
+                <h2>Professional Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>Qualification</label>
+
+                        <input
+                            type="text"
+                            value="M.Tech Computer Science">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Experience</label>
+
+                        <input
+                            type="text"
+                            value="6 Years">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Specialization</label>
+
+                        <input
+                            type="text"
+                            value="Java, Python & Web Development">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Languages Known</label>
+
+                        <input
+                            type="text"
+                            value="English, Tamil, Hindi">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ABOUT -->
+
+            <div class="section">
+
+                <h2>About Me</h2>
+
+                <textarea
+                    rows="5">Experienced technology tutor passionate about helping students learn programming, web development and database concepts through practical examples and projects.</textarea>
+
+            </div>
+
+
+            <!-- EDUCATION -->
+
+            <div class="section">
+
+                <h2>Education & Certifications</h2>
+
+                <div class="education-list">
+
+                    <div class="education-item">
+
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>M.Tech Computer Science</h3>
+
+                            <p>Anna University • 2018</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="education-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Full Stack Web Development Certification</h3>
+
+                            <p>Professional Certification • 2020</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="actions">
+
+                <button class="cancel-btn">
+                    Cancel
+                </button>
+
+                <button class="save-btn" onclick="saveProfile()">
+
+                    <i class="fas fa-save"></i>
+                    Save Changes
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function editProfile() {
+
+            alert("Profile editing mode enabled.");
+
+        }
+
+
+        function saveProfile() {
+
+            let name = document.getElementById("name").value;
+
+            if (name.trim() === "") {
+
+                alert("Please enter your name.");
+
+                return;
+
+            }
+
+            alert("Profile updated successfully!");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

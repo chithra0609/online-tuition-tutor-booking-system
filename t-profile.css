@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#f3f6fc;
+    display:flex;
+    color:#172033;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+    width:250px;
+    min-height:100vh;
+    background:#ffd84d;
+    padding:35px 25px;
+    position:fixed;
+    left:0;
+    top:0;
+}
+.sidebar h2{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:20px;
+}
+.sidebar ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar ul li{
+    margin-bottom:10px;
+    border-radius:14px;
+    transition:0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active{
+    background:white;
+   
+}
+
+.sidebar ul li a{
+    color:inherit;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:12px 20px;
+    font-size:16px;
+}
+
+.sidebar ul li i{
+    width:20px;
+}
+
+
+
+/* ================= MAIN ================= */
+
+.main{
+    width:calc(100% - 250px);
+    margin-left:250px;
+    padding:40px;
+}
+
+
+/* ================= HEADER ================= */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:34px;
+    margin-bottom:5px;
+}
+
+.header p{
+    color:#6b7280;
+}
+
+.notification{
+    width:50px;
+    height:50px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+
+/* ================= PROFILE CARD ================= */
+
+.profile-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+
+/* ================= PROFILE TOP ================= */
+
+.profile-top{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding-bottom:30px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.profile-image img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #fef3c7;
+}
+
+.profile-info{
+    flex:1;
+}
+
+.profile-info h2{
+    font-size:25px;
+    margin-bottom:6px;
+}
+
+.profile-info p{
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.profile-info p i{
+    margin-right:7px;
+    color:#2563eb;
+}
+
+.rating{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.rating span{
+    color:#f59e0b;
+    letter-spacing:2px;
+}
+
+.rating small{
+    color:#64748b;
+}
+
+
+/* EDIT BUTTON */
+
+.edit-btn{
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:9px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.edit-btn:hover{
+    background:#1d4ed8;
+}
+
+
+/* ================= SECTION ================= */
+
+.section{
+    padding:28px 0;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.section h2{
+    font-size:19px;
+    margin-bottom:20px;
+}
+
+
+/* ================= FORM ================= */
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:8px;
+    color:#475569;
+}
+
+.form-group input,
+.section textarea{
+    width:100%;
+    border:1px solid #d1d5db;
+    border-radius:9px;
+    padding:12px 14px;
+    font-size:14px;
+    outline:none;
+    transition:0.2s;
+    background:#fff;
+}
+
+.form-group input:focus,
+.section textarea:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,0.08);
+}
+
+.section textarea{
+    resize:vertical;
+    line-height:1.6;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.education-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+}
+
+.education-icon{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    background:#dbeafe;
+    color:#2563eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.education-item h3{
+    font-size:15px;
+    margin-bottom:4px;
+}
+
+.education-item p{
+    color:#64748b;
+    font-size:13px;
+}
+
+
+/* ================= ACTIONS ================= */
+
+.actions{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    padding-top:25px;
+}
+
+.cancel-btn,
+.save-btn{
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.cancel-btn{
+    background:white;
+    color:#475569;
+    border:1px solid #d1d5db;
+}
+
+.save-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+}
+
+.save-btn:hover{
+    background:#1d4ed8;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .sidebar{
+        width:210px;
+    }
+
+    .main{
+        margin-left:210px;
+        width:calc(100% - 210px);
+        padding:25px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .sidebar{
+        display:none;
+    }
+
+    .main{
+        width:100%;
+        margin-left:0;
+    }
+
+    .profile-top{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .edit-btn{
+        width:100%;
+    }
+
+}

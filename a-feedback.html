@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin - Feedback</title>
+
+    <link rel="stylesheet" href="a-feedback.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <h2>EduSpark</h2>
+
+        <ul>
+
+            <li>
+                <a href="admin.html">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-stds.html">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Students</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-tutors.html">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Tutors</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-sub.html">
+                    <i class="fas fa-book"></i>
+                    <span>Subject</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-booking.html">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Booking</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-payment.html">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Payment</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-report.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+
+            <!-- ACTIVE -->
+
+            <li class="active">
+                <a href="a-feedback.html">
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Feedback</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-setting.html">
+                    <i class="fas fa-cog"></i>
+                    <span>Setting</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="signout.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="main">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <div>
+                <h1>Feedback</h1>
+                <p>View and manage student and tutor feedback</p>
+            </div>
+
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+
+        </div>
+
+
+        <!-- ================= SUMMARY CARDS ================= -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-icon feedback-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+
+                <div>
+                    <p>Total Feedback</p>
+                    <h2>32</h2>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon rating-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div>
+                    <p>Average Rating</p>
+                    <h2>4.5</h2>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon positive-icon">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+
+                <div>
+                    <p>Positive Feedback</p>
+                    <h2>27</h2>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon negative-icon">
+                    <i class="fas fa-thumbs-down"></i>
+                </div>
+
+                <div>
+                    <p>Needs Attention</p>
+                    <h2>5</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= RATING OVERVIEW ================= -->
+
+        <div class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Rating Overview</h2>
+                    <p>Overall user satisfaction</p>
+                </div>
+
+                <i class="fas fa-star section-icon"></i>
+
+            </div>
+
+
+            <div class="rating-content">
+
+                <div class="average-rating">
+
+                    <h1>4.5</h1>
+
+                    <div class="stars">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+
+                    <p>Based on 32 reviews</p>
+
+                </div>
+
+
+                <div class="rating-bars">
+
+                    <div class="rating-row">
+
+                        <span>5 Star</span>
+
+                        <div class="rating-progress">
+                            <div style="width:78%;"></div>
+                        </div>
+
+                        <span>78%</span>
+
+                    </div>
+
+
+                    <div class="rating-row">
+
+                        <span>4 Star</span>
+
+                        <div class="rating-progress">
+                            <div style="width:15%;"></div>
+                        </div>
+
+                        <span>15%</span>
+
+                    </div>
+
+
+                    <div class="rating-row">
+
+                        <span>3 Star</span>
+
+                        <div class="rating-progress">
+                            <div style="width:5%;"></div>
+                        </div>
+
+                        <span>5%</span>
+
+                    </div>
+
+
+                    <div class="rating-row">
+
+                        <span>2 Star</span>
+
+                        <div class="rating-progress">
+                            <div style="width:2%;"></div>
+                        </div>
+
+                        <span>2%</span>
+
+                    </div>
+
+
+                    <div class="rating-row">
+
+                        <span>1 Star</span>
+
+                        <div class="rating-progress">
+                            <div style="width:0%;"></div>
+                        </div>
+
+                        <span>0%</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= FEEDBACK LIST ================= -->
+
+        <div class="section">
+
+            <div class="list-header">
+
+                <div>
+                    <h2>Recent Feedback</h2>
+                    <p>Latest feedback submitted by users</p>
+                </div>
+
+
+                <div class="filter-area">
+
+                    <select id="ratingFilter" onchange="filterFeedback()">
+
+                        <option value="all">All Ratings</option>
+                        <option value="5">5 Star</option>
+                        <option value="4">4 Star</option>
+                        <option value="3">3 Star</option>
+                        <option value="2">2 Star</option>
+                        <option value="1">1 Star</option>
+
+                    </select>
+
+
+                    <div class="search-box">
+
+                        <i class="fas fa-search"></i>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search feedback..."
+                            onkeyup="searchFeedback()">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEEDBACK CARDS -->
+
+            <div id="feedbackList">
+
+
+                <!-- FEEDBACK 1 -->
+
+                <div class="feedback-item" data-rating="5">
+
+                    <div class="user-avatar">
+                        P
+                    </div>
+
+                    <div class="feedback-content">
+
+                        <div class="feedback-top">
+
+                            <div>
+
+                                <h3>Priya</h3>
+
+                                <span>
+                                    Student • Python
+                                </span>
+
+                            </div>
+
+                            <div class="feedback-rating">
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="feedback-text">
+                            The tutor explained Python concepts very clearly.
+                            The classes were easy to understand and useful.
+                        </p>
+
+
+                        <div class="feedback-bottom">
+
+                            <span>
+                                <i class="far fa-calendar"></i>
+                                14 Aug 2026
+                            </span>
+
+                            <button
+                                class="delete-btn"
+                                onclick="deleteFeedback(this)">
+
+                                <i class="fas fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEEDBACK 2 -->
+
+                <div class="feedback-item" data-rating="4">
+
+                    <div class="user-avatar">
+                        A
+                    </div>
+
+                    <div class="feedback-content">
+
+                        <div class="feedback-top">
+
+                            <div>
+
+                                <h3>Arun</h3>
+
+                                <span>
+                                    Student • Java
+                                </span>
+
+                            </div>
+
+                            <div class="feedback-rating">
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="feedback-text">
+                            Good teaching experience. The tutor was friendly
+                            and answered all my doubts.
+                        </p>
+
+
+                        <div class="feedback-bottom">
+
+                            <span>
+                                <i class="far fa-calendar"></i>
+                                13 Aug 2026
+                            </span>
+
+                            <button
+                                class="delete-btn"
+                                onclick="deleteFeedback(this)">
+
+                                <i class="fas fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEEDBACK 3 -->
+
+                <div class="feedback-item" data-rating="5">
+
+                    <div class="user-avatar">
+                        S
+                    </div>
+
+                    <div class="feedback-content">
+
+                        <div class="feedback-top">
+
+                            <div>
+
+                                <h3>Swetha</h3>
+
+                                <span>
+                                    Student • React.js
+                                </span>
+
+                            </div>
+
+                            <div class="feedback-rating">
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="feedback-text">
+                            Excellent tutor. The React practical sessions
+                            were very helpful for my project.
+                        </p>
+
+
+                        <div class="feedback-bottom">
+
+                            <span>
+                                <i class="far fa-calendar"></i>
+                                12 Aug 2026
+                            </span>
+
+                            <button
+                                class="delete-btn"
+                                onclick="deleteFeedback(this)">
+
+                                <i class="fas fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEEDBACK 4 -->
+
+                <div class="feedback-item" data-rating="3">
+
+                    <div class="user-avatar">
+                        D
+                    </div>
+
+                    <div class="feedback-content">
+
+                        <div class="feedback-top">
+
+                            <div>
+
+                                <h3>Divya</h3>
+
+                                <span>
+                                    Student • MySQL
+                                </span>
+
+                            </div>
+
+                            <div class="feedback-rating">
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="feedback-text">
+                            The classes were useful, but I would like
+                            more practical examples during the sessions.
+                        </p>
+
+
+                        <div class="feedback-bottom">
+
+                            <span>
+                                <i class="far fa-calendar"></i>
+                                11 Aug 2026
+                            </span>
+
+                            <button
+                                class="delete-btn"
+                                onclick="deleteFeedback(this)">
+
+                                <i class="fas fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEEDBACK 5 -->
+
+                <div class="feedback-item" data-rating="2">
+
+                    <div class="user-avatar">
+                        K
+                    </div>
+
+                    <div class="feedback-content">
+
+                        <div class="feedback-top">
+
+                            <div>
+
+                                <h3>Karthik</h3>
+
+                                <span>
+                                    Student • JavaScript
+                                </span>
+
+                            </div>
+
+                            <div class="feedback-rating">
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="feedback-text">
+                            The session timing was not convenient.
+                            More flexible timings would be better.
+                        </p>
+
+
+                        <div class="feedback-bottom">
+
+                            <span>
+                                <i class="far fa-calendar"></i>
+                                10 Aug 2026
+                            </span>
+
+                            <button
+                                class="delete-btn"
+                                onclick="deleteFeedback(this)">
+
+                                <i class="fas fa-trash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        /* SEARCH */
+
+        function searchFeedback() {
+
+            let input =
+                document.getElementById("searchInput")
+                .value
+                .toLowerCase();
+
+            let items =
+                document.querySelectorAll(".feedback-item");
+
+            items.forEach(function(item) {
+
+                let text =
+                    item.innerText.toLowerCase();
+
+                if (text.includes(input)) {
+
+                    item.style.display = "flex";
+
+                } else {
+
+                    item.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+
+        /* FILTER BY RATING */
+
+        function filterFeedback() {
+
+            let rating =
+                document.getElementById("ratingFilter").value;
+
+            let items =
+                document.querySelectorAll(".feedback-item");
+
+
+            items.forEach(function(item) {
+
+                if (
+                    rating === "all" ||
+                    item.dataset.rating === rating
+                ) {
+
+                    item.style.display = "flex";
+
+                } else {
+
+                    item.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+
+        /* DELETE */
+
+        function deleteFeedback(button) {
+
+            let result =
+                confirm(
+                    "Are you sure you want to delete this feedback?"
+                );
+
+
+            if (result) {
+
+                let item =
+                    button.closest(".feedback-item");
+
+                item.remove();
+
+                alert(
+                    "Feedback deleted successfully!"
+                );
+
+            }
+
+        }
+
+
+        /* LOGOUT */
+
+        function logoutAdmin() {
+
+            return confirm(
+                "Are you sure you want to logout?"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

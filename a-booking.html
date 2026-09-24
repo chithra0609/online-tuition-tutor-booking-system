@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin - Booking</title>
+
+    <link rel="stylesheet" href="a-booking.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>EduSpark</h2>
+
+        <ul>
+
+            <li>
+                <a href="admin.html">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-stds.html">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Students</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-tutors.html">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Tutors</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-sub.html">
+                    <i class="fas fa-book"></i>
+                    <span>Subject</span>
+                </a>
+            </li>
+
+            <!-- ACTIVE -->
+
+            <li class="active">
+                <a href="a-booking.html">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Booking</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-payment.html">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Payment</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-report.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-feedback.html">
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Feedback</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-setting.html">
+                    <i class="fas fa-cog"></i>
+                    <span>Setting</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="signout.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- MAIN -->
+
+    <div class="main">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <div>
+                <h1>Bookings</h1>
+                <p>Manage student tutor bookings</p>
+            </div>
+
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+
+        </div>
+
+
+        <!-- SUMMARY CARDS -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+
+                <div>
+                    <p>Total Bookings</p>
+                    <h2>18</h2>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon pending-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+
+                <div>
+                    <p>Pending</p>
+                    <h2>5</h2>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon completed-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+
+                <div>
+                    <p>Completed</p>
+                    <h2>11</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NEW BOOKING -->
+
+        <div class="section">
+
+            <div class="section-title">
+
+                <h2>
+                    <i class="fas fa-calendar-plus"></i>
+                    Create New Booking
+                </h2>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>Student Name</label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter student name">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Tutor Name</label>
+
+                    <select id="tutorName">
+
+                        <option value="">Select Tutor</option>
+                        <option>Raj Kumar</option>
+                        <option>Priya Devi</option>
+                        <option>Arun Kumar</option>
+                        <option>Swetha Raj</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Subject</label>
+
+                    <select id="subject">
+
+                        <option value="">Select Subject</option>
+                        <option>Python</option>
+                        <option>Java</option>
+                        <option>HTML & CSS</option>
+                        <option>JavaScript</option>
+                        <option>React.js</option>
+                        <option>MySQL</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Booking Date</label>
+
+                    <input
+                        type="date"
+                        id="bookingDate">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Booking Time</label>
+
+                    <input
+                        type="time"
+                        id="bookingTime">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Duration</label>
+
+                    <select id="bookingDuration">
+
+                        <option value="">Select Duration</option>
+                        <option>1 Hour</option>
+                        <option>2 Hours</option>
+                        <option>3 Hours</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="buttons">
+
+                <button
+                    class="clear-btn"
+                    onclick="clearForm()">
+
+                    Clear
+
+                </button>
+
+
+                <button
+                    class="add-btn"
+                    onclick="createBooking()">
+
+                    <i class="fas fa-plus"></i>
+                    Create Booking
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOKING LIST -->
+
+        <div class="section">
+
+            <div class="list-header">
+
+                <div>
+
+                    <h2>Booking List</h2>
+
+                    <p>View and manage all student bookings</p>
+
+                </div>
+
+
+                <div class="search-box">
+
+                    <i class="fas fa-search"></i>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search booking..."
+                        onkeyup="searchBooking()">
+
+                </div>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table id="bookingTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Booking ID</th>
+                            <th>Student</th>
+                            <th>Tutor</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>#BK001</td>
+
+                            <td>Priya</td>
+
+                            <td>Raj Kumar</td>
+
+                            <td>Java</td>
+
+                            <td>15 Aug 2026</td>
+
+                            <td>10:00 AM</td>
+
+                            <td>
+                                <span class="status confirmed">
+                                    Confirmed
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="view-btn"
+                                    onclick="viewBooking('BK001')">
+
+                                    <i class="fas fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="approve-btn"
+                                    onclick="approveBooking(this)">
+
+                                    <i class="fas fa-check"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="cancel-btn"
+                                    onclick="cancelBooking(this)">
+
+                                    <i class="fas fa-times"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>#BK002</td>
+
+                            <td>Arun</td>
+
+                            <td>Priya Devi</td>
+
+                            <td>Python</td>
+
+                            <td>16 Aug 2026</td>
+
+                            <td>02:00 PM</td>
+
+                            <td>
+                                <span class="status pending">
+                                    Pending
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="view-btn"
+                                    onclick="viewBooking('BK002')">
+
+                                    <i class="fas fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="approve-btn"
+                                    onclick="approveBooking(this)">
+
+                                    <i class="fas fa-check"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="cancel-btn"
+                                    onclick="cancelBooking(this)">
+
+                                    <i class="fas fa-times"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>#BK003</td>
+
+                            <td>Swetha</td>
+
+                            <td>Arun Kumar</td>
+
+                            <td>React.js</td>
+
+                            <td>17 Aug 2026</td>
+
+                            <td>11:00 AM</td>
+
+                            <td>
+                                <span class="status completed">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="view-btn"
+                                    onclick="viewBooking('BK003')">
+
+                                    <i class="fas fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="cancel-btn"
+                                    onclick="cancelBooking(this)">
+
+                                    <i class="fas fa-times"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>#BK004</td>
+
+                            <td>Divya</td>
+
+                            <td>Swetha Raj</td>
+
+                            <td>MySQL</td>
+
+                            <td>18 Aug 2026</td>
+
+                            <td>04:00 PM</td>
+
+                            <td>
+                                <span class="status pending">
+                                    Pending
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="view-btn"
+                                    onclick="viewBooking('BK004')">
+
+                                    <i class="fas fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="approve-btn"
+                                    onclick="approveBooking(this)">
+
+                                    <i class="fas fa-check"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="cancel-btn"
+                                    onclick="cancelBooking(this)">
+
+                                    <i class="fas fa-times"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>#BK005</td>
+
+                            <td>Karthik</td>
+
+                            <td>Raj Kumar</td>
+
+                            <td>HTML & CSS</td>
+
+                            <td>19 Aug 2026</td>
+
+                            <td>09:00 AM</td>
+
+                            <td>
+                                <span class="status confirmed">
+                                    Confirmed
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="view-btn"
+                                    onclick="viewBooking('BK005')">
+
+                                    <i class="fas fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="cancel-btn"
+                                    onclick="cancelBooking(this)">
+
+                                    <i class="fas fa-times"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        /* CREATE BOOKING */
+
+        function createBooking() {
+
+            let student =
+                document.getElementById("studentName").value;
+
+            let tutor =
+                document.getElementById("tutorName").value;
+
+            let subject =
+                document.getElementById("subject").value;
+
+            let date =
+                document.getElementById("bookingDate").value;
+
+            let time =
+                document.getElementById("bookingTime").value;
+
+            let duration =
+                document.getElementById("bookingDuration").value;
+
+
+            if (
+                student === "" ||
+                tutor === "" ||
+                subject === "" ||
+                date === "" ||
+                time === "" ||
+                duration === ""
+            ) {
+
+                alert("Please fill all booking details.");
+
+                return;
+
+            }
+
+
+            alert(
+                "Booking created successfully!"
+            );
+
+
+            clearForm();
+
+        }
+
+
+        /* CLEAR */
+
+        function clearForm() {
+
+            document.getElementById("studentName").value = "";
+
+            document.getElementById("tutorName").value = "";
+
+            document.getElementById("subject").value = "";
+
+            document.getElementById("bookingDate").value = "";
+
+            document.getElementById("bookingTime").value = "";
+
+            document.getElementById("bookingDuration").value = "";
+
+        }
+
+
+        /* SEARCH */
+
+        function searchBooking() {
+
+            let input =
+                document.getElementById("searchInput")
+                .value
+                .toLowerCase();
+
+
+            let rows =
+                document.querySelectorAll(
+                    "#bookingTable tbody tr"
+                );
+
+
+            rows.forEach(function(row) {
+
+                let text =
+                    row.innerText.toLowerCase();
+
+
+                if (text.includes(input)) {
+
+                    row.style.display = "";
+
+                }
+                else {
+
+                    row.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+
+        /* VIEW */
+
+        function viewBooking(id) {
+
+            alert(
+                "Viewing booking details: " + id
+            );
+
+        }
+
+
+        /* APPROVE */
+
+        function approveBooking(button) {
+
+            let row =
+                button.closest("tr");
+
+            let status =
+                row.querySelector(".status");
+
+            status.innerText = "Confirmed";
+
+            status.className = "status confirmed";
+
+            alert(
+                "Booking confirmed successfully!"
+            );
+
+        }
+
+
+        /* CANCEL */
+
+        function cancelBooking(button) {
+
+            let result =
+                confirm(
+                    "Are you sure you want to cancel this booking?"
+                );
+
+
+            if (result) {
+
+                let row =
+                    button.closest("tr");
+
+                let status =
+                    row.querySelector(".status");
+
+                status.innerText = "Cancelled";
+
+                status.className = "status cancelled";
+
+                alert(
+                    "Booking cancelled."
+                );
+
+            }
+
+        }
+
+
+        /* LOGOUT */
+
+        function logoutAdmin() {
+
+            return confirm(
+                "Are you sure you want to logout?"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

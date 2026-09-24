@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f3f6fc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* MAIN CONTAINER */
+
+.signout-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* CARD */
+
+.signout-card {
+    width: 450px;
+    background: white;
+
+    padding: 45px 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+
+    color: #111;
+}
+
+
+/* CHECK ICON */
+
+.icon-circle {
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #22c55e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 38px;
+}
+
+
+/* HEADING */
+
+.signout-card h1 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+
+/* DESCRIPTION */
+
+.signout-card p {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.thank-you {
+    margin-top: 5px;
+}
+
+
+/* BUTTON */
+
+.signout-card button {
+    margin-top: 28px;
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #F9D03D;
+    color: black;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.signout-card button:hover {
+    background:#F9D03D;
+    color: black;
+}
+
+.signout-card button i {
+    margin-right: 8px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: 30px;
+
+    font-size: 11px;
+
+    color: #9ca3af;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    .signout-card {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .signout-card h1 {
+        font-size: 22px;
+    }
+
+}

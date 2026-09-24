@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings - EduSpark</title>
+
+    <link rel="stylesheet" href="s-setting.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2>EduSpark</h2>
+
+        <ul>
+
+            <li>
+                <a href="std.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="s-findtutor.html">
+                    <i class="fas fa-search"></i>
+                    Find Tutor
+                </a>
+            </li>
+
+            <li>
+                <a href="s-hw.html">
+                    <i class="fas fa-book"></i>
+                    Homework
+                </a>
+            </li>
+
+            <li>
+                <a href="s-assignment.html">
+                    <i class="fas fa-file-alt"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li>
+                <a href="s-mark.html">
+                    <i class="fas fa-chart-line"></i>
+                    Marks
+                </a>
+            </li>
+
+            <li>
+                <a href="s-profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="s-setting.html">
+                    <i class="fas fa-cog"></i>
+                    Settings
+                </a>
+            </li>
+<br>
+            <li>
+                <a href="signout.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Main Content -->
+
+    <div class="main">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <div>
+
+                <h1>Settings</h1>
+
+                <p>Manage your account preferences and security.</p>
+
+            </div>
+
+            <div class="notification">
+
+                <i class="fas fa-bell"></i>
+
+            </div>
+
+        </div>
+
+
+        <!-- Settings Container -->
+
+        <div class="settings-container">
+
+
+            <!-- Notifications -->
+
+            <div class="settings-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon blue">
+                        <i class="fas fa-bell"></i>
+                    </div>
+
+                    <div>
+                        <h2>Notifications</h2>
+                        <p>Manage your notification preferences.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>Email Notifications</h3>
+
+                        <p>Receive important updates through email.</p>
+
+                    </div>
+
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>Homework Reminders</h3>
+
+                        <p>Get reminders before homework deadlines.</p>
+
+                    </div>
+
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>Assignment Reminders</h3>
+
+                        <p>Receive reminders about upcoming assignments.</p>
+
+                    </div>
+
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Security -->
+
+            <div class="settings-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon red">
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+                    <div>
+                        <h2>Security</h2>
+                        <p>Manage your account security.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="security-row">
+
+                    <div>
+
+                        <h3>Change Password</h3>
+
+                        <p>Update your account password regularly.</p>
+
+                    </div>
+
+                    <button class="action-btn">
+                        Change Password
+                    </button>
+
+                </div>
+
+
+                <div class="security-row">
+
+                    <div>
+
+                        <h3>Two-Factor Authentication</h3>
+
+                        <p>Add an extra layer of security to your account.</p>
+
+                    </div>
+
+                    <button class="action-btn">
+                        Enable
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Privacy -->
+
+            <div class="settings-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon green">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+
+                    <div>
+                        <h2>Privacy</h2>
+                        <p>Control your privacy preferences.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <h3>Profile Visibility</h3>
+
+                        <p>Allow tutors to view your basic profile.</p>
+
+                    </div>
+
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Save -->
+
+            <div class="save-section">
+
+                <button class="cancel-btn">
+                    Cancel
+                </button>
+
+                <button class="save-btn">
+                    <i class="fas fa-save"></i>
+                    Save Changes
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marks - EduSpark</title>
+
+    <link rel="stylesheet" href="s-mark.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <h2>EduSpark</h2>
+
+        <ul>
+
+            <li>
+                <a href="std.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="s-findtutor.html">
+                    <i class="fas fa-search"></i>
+                    Find Tutor
+                </a>
+            </li>
+
+            <li>
+                <a href="s-hw.html">
+                    <i class="fas fa-book"></i>
+                    Homework
+                </a>
+            </li>
+
+            <li>
+                <a href="s-assignment.html">
+                    <i class="fas fa-file-alt"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="s-mark.html">
+                    <i class="fas fa-chart-line"></i>
+                    Marks
+                </a>
+            </li>
+
+            <li>
+                <a href="s-profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="s-setting.html">
+                    <i class="fas fa-cog"></i>
+                    Settings
+                </a>
+            </li>
+<br>
+            <li>
+                <a href="signout.html" >
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <div class="main">
+
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <div>
+
+                <h1>Academic Performance</h1>
+
+                <p>
+                    Track your marks and academic progress.
+                </p>
+
+            </div>
+
+            <div class="notification">
+
+                <i class="fas fa-bell"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= SUMMARY CARDS ================= -->
+
+        <div class="summary">
+
+
+            <!-- Average -->
+
+            <div class="summary-card">
+
+                <div class="icon blue">
+
+                    <i class="fas fa-chart-line"></i>
+
+                </div>
+
+                <div>
+
+                    <p>Average Marks</p>
+
+                    <h2>84%</h2>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Percentage -->
+
+            <div class="summary-card">
+
+                <div class="icon green">
+
+                    <i class="fas fa-percentage"></i>
+
+                </div>
+
+                <div>
+
+                    <p>Overall Percentage</p>
+
+                    <h2>84%</h2>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Subjects -->
+
+            <div class="summary-card">
+
+                <div class="icon orange">
+
+                    <i class="fas fa-book-open"></i>
+
+                </div>
+
+                <div>
+
+                    <p>Subjects Completed</p>
+
+                    <h2>5</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= PERFORMANCE STATUS ================= -->
+
+        <div class="performance-card">
+
+            <div class="performance-info">
+
+                <div>
+
+                    <h2>Overall Performance</h2>
+
+                    <p>Great progress! Keep maintaining your performance.</p>
+
+                </div>
+
+                <div class="performance-grade">
+
+                    <span>Grade</span>
+
+                    <strong>A</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="progress-section">
+
+                <div class="progress-label">
+
+                    <span>Overall Progress</span>
+
+                    <span>84%</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= MARKS TABLE ================= -->
+
+        <div class="marks-box">
+
+
+            <div class="title">
+
+                <div>
+
+                    <h2>Subject-wise Marks</h2>
+
+                    <p>
+                        View your performance in each subject.
+                    </p>
+
+                </div>
+
+
+                <button class="filter-btn">
+
+                    <i class="fas fa-filter"></i>
+
+                    Filter
+
+                </button>
+
+            </div>
+
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Subject</th>
+
+                            <th>Internal</th>
+
+                            <th>Assignment</th>
+
+                            <th>Exam</th>
+
+                            <th>Total</th>
+
+                            <th>Grade</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- Java -->
+
+                        <tr>
+
+                            <td>
+
+                                <span class="subject java">
+
+                                    Java
+
+                                </span>
+
+                            </td>
+
+                            <td>85</td>
+
+                            <td>90</td>
+
+                            <td>86</td>
+
+                            <td><strong>87</strong></td>
+
+                            <td>
+
+                                <span class="grade a">
+
+                                    A
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status excellent">
+
+                                    Excellent
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- Python -->
+
+                        <tr>
+
+                            <td>
+
+                                <span class="subject python">
+
+                                    Python
+
+                                </span>
+
+                            </td>
+
+                            <td>80</td>
+
+                            <td>85</td>
+
+                            <td>82</td>
+
+                            <td><strong>82</strong></td>
+
+                            <td>
+
+                                <span class="grade a">
+
+                                    A
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status good">
+
+                                    Good
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- React -->
+
+                        <tr>
+
+                            <td>
+
+                                <span class="subject react">
+
+                                    React
+
+                                </span>
+
+                            </td>
+
+                            <td>92</td>
+
+                            <td>88</td>
+
+                            <td>90</td>
+
+                            <td><strong>90</strong></td>
+
+                            <td>
+
+                                <span class="grade aplus">
+
+                                    A+
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status excellent">
+
+                                    Excellent
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- HTML -->
+
+                        <tr>
+
+                            <td>
+
+                                <span class="subject html">
+
+                                    HTML & CSS
+
+                                </span>
+
+                            </td>
+
+                            <td>84</td>
+
+                            <td>80</td>
+
+                            <td>83</td>
+
+                            <td><strong>82</strong></td>
+
+                            <td>
+
+                                <span class="grade a">
+
+                                    A
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status good">
+
+                                    Good
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- Database -->
+
+                        <tr>
+
+                            <td>
+
+                                <span class="subject database">
+
+                                    MySQL
+
+                                </span>
+
+                            </td>
+
+                            <td>88</td>
+
+                            <td>86</td>
+
+                            <td>85</td>
+
+                            <td><strong>86</strong></td>
+
+                            <td>
+
+                                <span class="grade a">
+
+                                    A
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status excellent">
+
+                                    Excellent
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= FEEDBACK ================= -->
+
+        <div class="feedback-card">
+
+            <div class="feedback-icon">
+
+                <i class="fas fa-lightbulb"></i>
+
+            </div>
+
+            <div>
+
+                <h3>Performance Feedback</h3>
+
+                <p>
+                    Your overall performance is good. React and Java
+                    are your strongest subjects. Continue practicing
+                    Python and database concepts to improve further.
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

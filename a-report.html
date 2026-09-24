@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin - Reports</title>
+
+    <link rel="stylesheet" href="a-report.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <h2>EduSpark</h2>
+
+        <ul>
+
+            <li>
+                <a href="admin.html">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-stds.html">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Students</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-tutors.html">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Tutors</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-sub.html">
+                    <i class="fas fa-book"></i>
+                    <span>Subject</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-booking.html">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Booking</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-payment.html">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Payment</span>
+                </a>
+            </li>
+
+            <!-- ACTIVE -->
+
+            <li class="active">
+                <a href="a-report.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-feedback.html">
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Feedback</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="a-setting.html">
+                    <i class="fas fa-cog"></i>
+                    <span>Setting</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="signout.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="main">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <div>
+                <h1>Reports</h1>
+                <p>View overall platform performance and statistics</p>
+            </div>
+
+            <div class="header-right">
+
+                <button class="download-btn" onclick="downloadReport()">
+                    <i class="fas fa-download"></i>
+                    Download Report
+                </button>
+
+                <div class="notification">
+                    <i class="fas fa-bell"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= FILTER ================= -->
+
+        <div class="filter-box">
+
+            <div class="filter-group">
+
+                <label>Report Type</label>
+
+                <select id="reportType">
+
+                    <option>Overall Report</option>
+                    <option>Student Report</option>
+                    <option>Tutor Report</option>
+                    <option>Booking Report</option>
+                    <option>Payment Report</option>
+                    <option>Subject Report</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label>From Date</label>
+
+                <input type="date" id="fromDate">
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label>To Date</label>
+
+                <input type="date" id="toDate">
+
+            </div>
+
+
+            <button class="apply-btn" onclick="applyFilter()">
+
+                <i class="fas fa-filter"></i>
+                Apply Filter
+
+            </button>
+
+        </div>
+
+
+        <!-- ================= SUMMARY CARDS ================= -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-icon student-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+
+                <div>
+                    <p>Total Students</p>
+                    <h2>24</h2>
+                    <span class="growth">
+                        <i class="fas fa-arrow-up"></i>
+                        12% this month
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon tutor-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+
+                <div>
+                    <p>Total Tutors</p>
+                    <h2>9</h2>
+                    <span class="growth">
+                        <i class="fas fa-arrow-up"></i>
+                        8% this month
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon booking-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+
+                <div>
+                    <p>Total Bookings</p>
+                    <h2>18</h2>
+                    <span class="growth">
+                        <i class="fas fa-arrow-up"></i>
+                        15% this month
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon revenue-icon">
+                    <i class="fas fa-indian-rupee-sign"></i>
+                </div>
+
+                <div>
+                    <p>Total Revenue</p>
+                    <h2>₹18,500</h2>
+                    <span class="growth">
+                        <i class="fas fa-arrow-up"></i>
+                        18% this month
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CHART SECTION ================= -->
+
+        <div class="chart-grid">
+
+            <!-- MONTHLY BOOKINGS -->
+
+            <div class="section chart-section">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Monthly Bookings</h2>
+                        <p>Booking performance over recent months</p>
+                    </div>
+
+                    <i class="fas fa-calendar-check section-icon"></i>
+
+                </div>
+
+
+                <div class="bar-chart">
+
+                    <div class="bar-item">
+                        <div class="bar" style="height:45%;"></div>
+                        <span>Mar</span>
+                    </div>
+
+                    <div class="bar-item">
+                        <div class="bar" style="height:60%;"></div>
+                        <span>Apr</span>
+                    </div>
+
+                    <div class="bar-item">
+                        <div class="bar" style="height:50%;"></div>
+                        <span>May</span>
+                    </div>
+
+                    <div class="bar-item">
+                        <div class="bar" style="height:75%;"></div>
+                        <span>Jun</span>
+                    </div>
+
+                    <div class="bar-item">
+                        <div class="bar" style="height:65%;"></div>
+                        <span>Jul</span>
+                    </div>
+
+                    <div class="bar-item">
+                        <div class="bar current" style="height:90%;"></div>
+                        <span>Aug</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- REVENUE -->
+
+            <div class="section chart-section">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Revenue Overview</h2>
+                        <p>Monthly revenue summary</p>
+                    </div>
+
+                    <i class="fas fa-chart-line section-icon"></i>
+
+                </div>
+
+
+                <div class="revenue-list">
+
+                    <div class="revenue-row">
+
+                        <span>March</span>
+
+                        <strong>₹8,500</strong>
+
+                    </div>
+
+
+                    <div class="progress">
+                        <div style="width:45%;"></div>
+                    </div>
+
+
+                    <div class="revenue-row">
+
+                        <span>April</span>
+
+                        <strong>₹10,200</strong>
+
+                    </div>
+
+
+                    <div class="progress">
+                        <div style="width:55%;"></div>
+                    </div>
+
+
+                    <div class="revenue-row">
+
+                        <span>May</span>
+
+                        <strong>₹12,500</strong>
+
+                    </div>
+
+
+                    <div class="progress">
+                        <div style="width:65%;"></div>
+                    </div>
+
+
+                    <div class="revenue-row">
+
+                        <span>June</span>
+
+                        <strong>₹14,800</strong>
+
+                    </div>
+
+
+                    <div class="progress">
+                        <div style="width:75%;"></div>
+                    </div>
+
+
+                    <div class="revenue-row">
+
+                        <span>July</span>
+
+                        <strong>₹16,300</strong>
+
+                    </div>
+
+
+                    <div class="progress">
+                        <div style="width:85%;"></div>
+                    </div>
+
+
+                    <div class="revenue-row">
+
+                        <span>August</span>
+
+                        <strong>₹18,500</strong>
+
+                    </div>
+
+
+                    <div class="progress">
+                        <div style="width:95%;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= SUBJECT PERFORMANCE ================= -->
+
+        <div class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Subject Performance</h2>
+                    <p>Bookings and students by subject</p>
+                </div>
+
+                <i class="fas fa-book section-icon"></i>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table id="reportTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Subject</th>
+                            <th>Students</th>
+                            <th>Bookings</th>
+                            <th>Revenue</th>
+                            <th>Performance</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>Python</strong>
+                            </td>
+
+                            <td>8</td>
+
+                            <td>7</td>
+
+                            <td>₹4,500</td>
+
+                            <td>
+
+                                <div class="performance">
+
+                                    <div class="performance-bar">
+                                        <div style="width:90%;"></div>
+                                    </div>
+
+                                    <span>90%</span>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Java</strong>
+                            </td>
+
+                            <td>6</td>
+
+                            <td>5</td>
+
+                            <td>₹3,800</td>
+
+                            <td>
+
+                                <div class="performance">
+
+                                    <div class="performance-bar">
+                                        <div style="width:78%;"></div>
+                                    </div>
+
+                                    <span>78%</span>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>HTML & CSS</strong>
+                            </td>
+
+                            <td>5</td>
+
+                            <td>4</td>
+
+                            <td>₹3,200</td>
+
+                            <td>
+
+                                <div class="performance">
+
+                                    <div class="performance-bar">
+                                        <div style="width:70%;"></div>
+                                    </div>
+
+                                    <span>70%</span>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>JavaScript</strong>
+                            </td>
+
+                            <td>7</td>
+
+                            <td>6</td>
+
+                            <td>₹3,900</td>
+
+                            <td>
+
+                                <div class="performance">
+
+                                    <div class="performance-bar">
+                                        <div style="width:84%;"></div>
+                                    </div>
+
+                                    <span>84%</span>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>React.js</strong>
+                            </td>
+
+                            <td>4</td>
+
+                            <td>3</td>
+
+                            <td>₹2,100</td>
+
+                            <td>
+
+                                <div class="performance">
+
+                                    <div class="performance-bar">
+                                        <div style="width:62%;"></div>
+                                    </div>
+
+                                    <span>62%</span>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= RECENT ACTIVITY ================= -->
+
+        <div class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Recent Activity</h2>
+                    <p>Latest platform activities</p>
+                </div>
+
+            </div>
+
+
+            <div class="activity-list">
+
+                <div class="activity">
+
+                    <div class="activity-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+
+                    <div>
+                        <strong>New student registered</strong>
+                        <p>Arun joined EduSpark</p>
+                    </div>
+
+                    <span>2 hours ago</span>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+
+                    <div>
+                        <strong>New booking created</strong>
+                        <p>Python session booked with Priya Devi</p>
+                    </div>
+
+                    <span>4 hours ago</span>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+
+                    <div>
+                        <strong>Payment received</strong>
+                        <p>₹600 payment completed</p>
+                    </div>
+
+                    <span>Yesterday</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        /* APPLY FILTER */
+
+        function applyFilter() {
+
+            let type =
+                document.getElementById("reportType").value;
+
+            let from =
+                document.getElementById("fromDate").value;
+
+            let to =
+                document.getElementById("toDate").value;
+
+
+            if (from !== "" && to !== "") {
+
+                alert(
+                    type +
+                    " generated from " +
+                    from +
+                    " to " +
+                    to
+                );
+
+            } else {
+
+                alert(
+                    type + " selected successfully."
+                );
+
+            }
+
+        }
+
+
+        /* DOWNLOAD */
+
+        function downloadReport() {
+
+            alert(
+                "Report download started."
+            );
+
+        }
+
+
+        /* LOGOUT */
+
+        function logoutAdmin() {
+
+            return confirm(
+                "Are you sure you want to logout?"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

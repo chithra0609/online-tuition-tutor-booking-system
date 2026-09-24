@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework - EduSpark</title>
+    <link rel="stylesheet" href="s-hw.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>EduSpark</h2>
+        <ul>
+            <li>
+                <a href="std.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="s-findtutor.html">
+                    <i class="fas fa-search"></i>
+                    Find Tutor
+                </a>
+            </li>
+            <li class="active">
+                <a href="s-hw.html">
+                    <i class="fas fa-book"></i>
+                    Homework
+                </a>
+            </li>
+            <li>
+                <a href="s-assignment.html">
+                    <i class="fas fa-file-alt"></i>
+                    Assignments
+                </a>
+            </li>
+            <li>
+                <a href="s-mark.html">
+                    <i class="fas fa-chart-line"></i>
+                    Marks
+                </a>
+            </li>
+            <li>
+                <a href="s-profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+            <li>
+                <a href="s-setting.html">
+                    <i class="fas fa-cog"></i>
+                    Settings
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="signout.html" >
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="main">
+        <div class="header">
+            <div>
+                <h1>Homework</h1>
+                <p>View and complete your daily homework.</p>
+            </div>
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+        </div>
+        <!-- Summary Cards -->
+        <div class="summary">
+            <div class="summary-card">
+
+                <div class="icon blue">
+                    <i class="fas fa-book"></i>
+                </div>
+
+                <div>
+                    <p>Total Homework</p>
+                    <h2>8</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="icon orange">
+                    <i class="fas fa-clock"></i>
+                </div>
+
+                <div>
+                    <p>Pending</p>
+                    <h2>3</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="icon green">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div>
+                    <p>Completed</p>
+                    <h2>5</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Homework Table -->
+        <div class="homework-box">
+            <div class="title">
+                <h2>Recent Homework</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Homework</th>
+                        <th>Tutor</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maths</td>
+                        <td>Complete Exercise 5.2</td>
+                        <td>Mr. Sabari</td>
+                        <td>25 Jul 2026</td>
+                        <td>
+                            <span class="pending">
+                                Pending
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Physics</td>
+                        <td>Prepare notes for Motion</td>
+                        <td>Mrs. Madhu</td>
+                        <td>26 Jul 2026</td>
+                        <td>
+                            <span class="progress">
+                                In Progress
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Java</td>
+                        <td>Complete Array Programs</td>
+                        <td>Mr. Ram</td>
+                        <td>27 Jul 2026</td>
+                        <td>
+                            <span class="completed">
+                                Completed
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>HTML & CSS</td>
+                        <td>Create a Registration Form</td>
+                        <td>Mrs. Sandhiya</td>
+                        <td>28 Jul 2026</td>
+                        <td>
+                            <span class="completed">
+                                Completed
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

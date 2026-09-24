@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Availability - EduSpark</title>
+
+    <link rel="stylesheet" href="t-availability.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <h2>EduSpark</h2>
+    <ul>
+        <!-- Dashboard -->
+        <li>
+            <a href="tutor.html">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <!-- Profile -->
+        <li>
+            <a href="t-profile.html">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+        <!-- Subjects -->
+        <li>
+            <a href="t-sub.html">
+                <i class="fas fa-book"></i>
+                <span>Subjects</span>
+            </a>
+        </li>
+        <!-- Fees -->
+        <li>
+            <a href="t-fees.html">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>Fees</span>
+            </a>
+        </li>
+        <!-- Availability -->
+        <li class="active">
+            <a href="t-availability.html">
+                <i class="fas fa-calendar-check"></i>
+                <span>Availability</span>
+            </a>
+        </li>
+        <!-- Homework -->
+        <li>
+            <a href="t-hw.html">
+                <i class="fas fa-book-open"></i>
+                <span>Homework</span>
+            </a>
+        </li>
+        <!-- Assignment -->
+        <li>
+            <a href="t-assignment.html">
+                <i class="fas fa-file-alt"></i>
+                <span>Assignment</span>
+            </a>
+        </li>
+        <!-- Marks -->
+        <li>
+            <a href="t-mark.html">
+                <i class="fas fa-chart-line"></i>
+                <span>Marks</span>
+            </a>
+        </li>
+        <!-- Settings -->
+        <li>
+            <a href="t-setting.html">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <!-- Logout -->
+        <li>
+            <a href="signout.html">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="main">
+
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <div>
+
+                <h1>My Availability</h1>
+
+                <p>Set your teaching schedule and available time slots.</p>
+
+            </div>
+
+            <div class="notification">
+
+                <i class="fas fa-bell"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= STATUS CARD ================= -->
+
+        <div class="status-card">
+
+            <div class="status-left">
+
+                <div class="status-icon">
+
+                    <i class="fas fa-circle"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>Currently Available</h2>
+
+                    <p>Students can book sessions with you.</p>
+
+                </div>
+
+            </div>
+
+
+            <label class="switch">
+
+                <input type="checkbox" id="availabilityToggle" checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+
+
+        <!-- ================= WEEKLY SCHEDULE ================= -->
+
+        <div class="schedule-card">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>Weekly Schedule</h2>
+
+                    <p>Select your available days and teaching hours.</p>
+
+                </div>
+
+                <button class="add-btn" onclick="addSlot()">
+
+                    <i class="fas fa-plus"></i>
+
+                    Add Time Slot
+
+                </button>
+
+            </div>
+
+
+
+            <!-- Monday -->
+
+            <div class="day-row">
+
+                <div class="day-name">
+
+                    <input type="checkbox" checked>
+
+                    <strong>Monday</strong>
+
+                </div>
+
+                <div class="time">
+
+                    <input type="time" value="17:00">
+
+                    <span>to</span>
+
+                    <input type="time" value="19:00">
+
+                </div>
+
+                <span class="available">Available</span>
+
+            </div>
+
+
+
+            <!-- Tuesday -->
+
+            <div class="day-row">
+
+                <div class="day-name">
+
+                    <input type="checkbox" checked>
+
+                    <strong>Tuesday</strong>
+
+                </div>
+
+                <div class="time">
+
+                    <input type="time" value="17:00">
+
+                    <span>to</span>
+
+                    <input type="time" value="19:00">
+
+                </div>
+
+                <span class="available">Available</span>
+
+            </div>
+
+
+
+            <!-- Wednesday -->
+
+            <div class="day-row unavailable-row">
+
+                <div class="day-name">
+
+                    <input type="checkbox">
+
+                    <strong>Wednesday</strong>
+
+                </div>
+
+                <div class="time disabled">
+
+                    <input type="time" disabled>
+
+                    <span>to</span>
+
+                    <input type="time" disabled>
+
+                </div>
+
+                <span class="unavailable">Unavailable</span>
+
+            </div>
+
+
+
+            <!-- Thursday -->
+
+            <div class="day-row">
+
+                <div class="day-name">
+
+                    <input type="checkbox" checked>
+
+                    <strong>Thursday</strong>
+
+                </div>
+
+                <div class="time">
+
+                    <input type="time" value="18:00">
+
+                    <span>to</span>
+
+                    <input type="time" value="20:00">
+
+                </div>
+
+                <span class="available">Available</span>
+
+            </div>
+
+
+
+            <!-- Friday -->
+
+            <div class="day-row">
+
+                <div class="day-name">
+
+                    <input type="checkbox" checked>
+
+                    <strong>Friday</strong>
+
+                </div>
+
+                <div class="time">
+
+                    <input type="time" value="17:00">
+
+                    <span>to</span>
+
+                    <input type="time" value="19:00">
+
+                </div>
+
+                <span class="available">Available</span>
+
+            </div>
+
+
+
+            <!-- Saturday -->
+
+            <div class="day-row">
+
+                <div class="day-name">
+
+                    <input type="checkbox" checked>
+
+                    <strong>Saturday</strong>
+
+                </div>
+
+                <div class="time">
+
+                    <input type="time" value="10:00">
+
+                    <span>to</span>
+
+                    <input type="time" value="13:00">
+
+                </div>
+
+                <span class="available">Available</span>
+
+            </div>
+
+
+
+            <!-- Sunday -->
+
+            <div class="day-row unavailable-row">
+
+                <div class="day-name">
+
+                    <input type="checkbox">
+
+                    <strong>Sunday</strong>
+
+                </div>
+
+                <div class="time disabled">
+
+                    <input type="time" disabled>
+
+                    <span>to</span>
+
+                    <input type="time" disabled>
+
+                </div>
+
+                <span class="unavailable">Unavailable</span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ================= QUICK SUMMARY ================= -->
+
+        <div class="summary-card">
+
+
+            <div class="summary-item">
+
+                <div class="summary-icon blue">
+
+                    <i class="fas fa-calendar-day"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Available Days</span>
+
+                    <strong>5 Days</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <div class="summary-icon green">
+
+                    <i class="fas fa-clock"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Teaching Hours</span>
+
+                    <strong>11 Hours / Week</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <div class="summary-icon orange">
+
+                    <i class="fas fa-users"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Active Students</span>
+
+                    <strong>28 Students</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Save -->
+
+        <div class="save-section">
+
+            <button class="cancel-btn">
+
+                Cancel
+
+            </button>
+
+            <button class="save-btn" onclick="saveAvailability()">
+
+                <i class="fas fa-save"></i>
+
+                Save Availability
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        const toggle = document.getElementById("availabilityToggle");
+
+        toggle.addEventListener("change", function () {
+
+            if (this.checked) {
+
+                alert("You are now Available for students.");
+
+            } else {
+
+                alert("You are now Unavailable for students.");
+
+            }
+
+        });
+
+
+        function saveAvailability() {
+
+            alert("Availability saved successfully!");
+
+        }
+
+
+        function addSlot() {
+
+            alert("New time slot option will be added here.");
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

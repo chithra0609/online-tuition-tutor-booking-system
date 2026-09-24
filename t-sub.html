@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Subjects - EduSpark</title>
+
+    <link rel="stylesheet" href="t-sub.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+<div class="sidebar">
+    <h2>EduSpark</h2>
+    <ul>
+        <!-- Dashboard -->
+        <li>
+            <a href="tutor.html">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <!-- Profile -->
+        <li>
+            <a href="t-profile.html">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+        <!-- Subjects -->
+        <li class="active">
+            <a href="t-sub.html">
+                <i class="fas fa-book"></i>
+                <span>Subjects</span>
+            </a>
+        </li>
+        <!-- Fees -->
+        <li>
+            <a href="t-fees.html">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>Fees</span>
+            </a>
+        </li>
+        <!-- Availability -->
+        <li>
+            <a href="t-availability.html">
+                <i class="fas fa-calendar-check"></i>
+                <span>Availability</span>
+            </a>
+        </li>
+        <!-- Homework -->
+        <li>
+            <a href="t-hw.html">
+                <i class="fas fa-book-open"></i>
+                <span>Homework</span>
+            </a>
+        </li>
+        <!-- Assignment -->
+        <li>
+            <a href="t-assignment.html">
+                <i class="fas fa-file-alt"></i>
+                <span>Assignment</span>
+            </a>
+        </li>
+        <!-- Marks -->
+        <li>
+            <a href="t-mark.html">
+                <i class="fas fa-chart-line"></i>
+                <span>Marks</span>
+            </a>
+        </li>
+        <!-- Settings -->
+        <li>
+            <a href="t-setting.html">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <!-- Logout -->
+        <li>
+            <a href="signout.html">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <div>
+
+                <h1>My Subjects</h1>
+
+                <p>Manage the subjects you teach to students.</p>
+
+            </div>
+
+            <div class="notification">
+
+                <i class="fas fa-bell"></i>
+
+            </div>
+
+        </div>
+
+
+        <!-- Summary -->
+
+        <div class="summary">
+
+            <div class="summary-card">
+
+                <div class="icon blue">
+                    <i class="fas fa-book-open"></i>
+                </div>
+
+                <div>
+                    <p>Total Subjects</p>
+                    <h2>4</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="icon green">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+
+                <div>
+                    <p>Students</p>
+                    <h2>28</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="icon orange">
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div>
+                    <p>Average Rating</p>
+                    <h2>4.8</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Subject Section -->
+
+        <div class="subject-box">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Teaching Subjects</h2>
+                    <p>Subjects currently available for tutoring.</p>
+                </div>
+
+                <button class="add-btn" onclick="addSubject()">
+                    <i class="fas fa-plus"></i>
+                    Add Subject
+                </button>
+
+            </div>
+
+
+            <!-- Subject Cards -->
+
+            <div class="subject-grid">
+
+
+                <!-- Java -->
+
+                <div class="subject-card">
+
+                    <div class="subject-icon java">
+                        <i class="fab fa-java"></i>
+                    </div>
+
+                    <div class="subject-content">
+
+                        <h3>Java Programming</h3>
+
+                        <p>
+                            Core Java, OOP, Collections and basic programming.
+                        </p>
+
+                        <div class="subject-info">
+
+                            <span>
+                                <i class="fas fa-users"></i>
+                                10 Students
+                            </span>
+
+                            <span>
+                                <i class="fas fa-star"></i>
+                                4.9
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="manage-btn">
+                        Manage
+                    </button>
+
+                </div>
+
+
+                <!-- Python -->
+
+                <div class="subject-card">
+
+                    <div class="subject-icon python">
+                        <i class="fab fa-python"></i>
+                    </div>
+
+                    <div class="subject-content">
+
+                        <h3>Python Programming</h3>
+
+                        <p>
+                            Python basics, OOP, functions and problem solving.
+                        </p>
+
+                        <div class="subject-info">
+
+                            <span>
+                                <i class="fas fa-users"></i>
+                                8 Students
+                            </span>
+
+                            <span>
+                                <i class="fas fa-star"></i>
+                                4.8
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="manage-btn">
+                        Manage
+                    </button>
+
+                </div>
+
+
+                <!-- Web Development -->
+
+                <div class="subject-card">
+
+                    <div class="subject-icon web">
+                        <i class="fas fa-code"></i>
+                    </div>
+
+                    <div class="subject-content">
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            HTML, CSS, JavaScript and responsive web design.
+                        </p>
+
+                        <div class="subject-info">
+
+                            <span>
+                                <i class="fas fa-users"></i>
+                                6 Students
+                            </span>
+
+                            <span>
+                                <i class="fas fa-star"></i>
+                                4.7
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="manage-btn">
+                        Manage
+                    </button>
+
+                </div>
+
+
+                <!-- MySQL -->
+
+                <div class="subject-card">
+
+                    <div class="subject-icon database">
+                        <i class="fas fa-database"></i>
+                    </div>
+
+                    <div class="subject-content">
+
+                        <h3>MySQL Database</h3>
+
+                        <p>
+                            SQL queries, database design and CRUD operations.
+                        </p>
+
+                        <div class="subject-info">
+
+                            <span>
+                                <i class="fas fa-users"></i>
+                                4 Students
+                            </span>
+
+                            <span>
+                                <i class="fas fa-star"></i>
+                                4.6
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="manage-btn">
+                        Manage
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Add Subject Note -->
+
+        <div class="info-card">
+
+            <div class="info-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+
+            <div>
+
+                <h3>Teaching Tip</h3>
+
+                <p>
+                    Keep your subject information updated so students can
+                    easily find the right tutor for their learning needs.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Simple JavaScript -->
+
+    <script>
+
+        function addSubject() {
+
+            let subject = prompt("Enter the subject you teach:");
+
+            if (subject !== null && subject.trim() !== "") {
+
+                alert(subject + " has been added successfully!");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
